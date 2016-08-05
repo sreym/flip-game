@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title></title>
+
+  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+  <!-- ionic/angularjs js -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="cordova.js"></script>
+
+  <!-- your app's js -->
+  <script src="js/app.js"></script>
+</head>
+
+<body ng-app="starter" ng-controller="GameCtrl">
+  <ion-pane>
+    <ion-header-bar class="bar-stable">
+      <button class="button icon ion-ios-refresh" ng-click="newgame()"></button>
+      <h1 class="title">Current Complexity: {{ comp }} / {{ mincomp }} ({{clicks}})</h1>
+    </ion-header-bar>
+    <ion-content style="background-color: #faf8ef">
+      <table id="f_val">
+        <tr>
+          <td>{{ fpart(0) }}</td>
+          <td>{{ fpart(1) }}</td>
+          <td>{{ fpart(2) }}</td>
+          <td>{{ fpart(3) }}</td>
+        </tr>
+        <tr>
+          <td>{{ fpart(4) }}</td>
+          <td>{{ fpart(5) }}</td>
+          <td>{{ fpart(6) }}</td>
+          <td>{{ fpart(7) }}</td>
+        </tr>
+      </table>
+      <table id="f3_mods">
+        <tr>
+          <td ng-class="[{switchedOff: !f3[0]}, 'td'+f3_mods[0]]" ng-click="switch(0)">{{ f3_mods[0] }}</td>
+          <td ng-class="[{switchedOff: !f3[1]}, 'td'+f3_mods[1]]" ng-click="switch(1)">{{ f3_mods[1] }}</td>
+          <td ng-class="[{switchedOff: !f3[2]}, 'td'+f3_mods[2]]" ng-click="switch(2)">{{ f3_mods[2] }}</td>
+          <td ng-class="[{switchedOff: !f3[3]}, 'td'+f3_mods[3]]" ng-click="switch(3)">{{ f3_mods[3] }}</td>
+        </tr>
+        <tr>
+          <td ng-class="[{switchedOff: !f3[4]}, 'td'+f3_mods[4]]" ng-click="switch(4)">{{ f3_mods[4] }}</td>
+          <td ng-class="[{switchedOff: !f3[5]}, 'td'+f3_mods[5]]" ng-click="switch(5)">{{ f3_mods[5] }}</td>
+          <td ng-class="[{switchedOff: !f3[6]}, 'td'+f3_mods[6]]" ng-click="switch(6)">{{ f3_mods[6] }}</td>
+          <td ng-class="[{switchedOff: !f3[7]}, 'td'+f3_mods[7]]" ng-click="switch(7)">{{ f3_mods[7] }}</td>
+        </tr>
+        <tr>
+          <td ng-class="[{switchedOff: !f3[8]}, 'td'+f3_mods[8]]" ng-click="switch(8)">{{ f3_mods[8] }}</td>
+          <td ng-class="[{switchedOff: !f3[9]}, 'td'+f3_mods[9]]" ng-click="switch(9)">{{ f3_mods[9] }}</td>
+          <td ng-class="[{switchedOff: !f3[10]}, 'td'+f3_mods[10]]" ng-click="switch(10)">{{ f3_mods[10] }}</td>
+          <td ng-class="[{switchedOff: !f3[11]}, 'td'+f3_mods[11]]" ng-click="switch(11)">{{ f3_mods[11] }}</td>
+        </tr>
+        <tr>
+          <td ng-class="[{switchedOff: !f3[12]}, 'td'+f3_mods[12]]" ng-click="switch(12)">{{ f3_mods[12] }}</td>
+          <td ng-class="[{switchedOff: !f3[13]}, 'td'+f3_mods[13]]" ng-click="switch(13)">{{ f3_mods[13] }}</td>
+          <td ng-class="[{switchedOff: !f3[14]}, 'td'+f3_mods[14]]" ng-click="switch(14)">{{ f3_mods[14] }}</td>
+          <td ng-class="[{switchedOff: !f3[15]}, 'td'+f3_mods[15]]" ng-click="switch(15)">{{ f3_mods[15] }}</td>
+        </tr>
+      </table>
+    </ion-content>
+  </ion-pane>
+</body>
+
+</html>

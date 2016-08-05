@@ -1,0 +1,102 @@
+/* Empty. Add your own CSS if you like */
+
+#f3_mods td {
+  border: solid 3px #bbada0;
+  width: 20vmin;
+  height: 20vmin;
+  text-align: center;
+  font-size: 10vmin;
+  line-height: 20vmin;
+  background-color: yellow;
+  border-collapse: collapse;
+  text-shadow: 1px 1px 3px black;
+  color: white;
+}
+
+#f3_mods {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+#f_val {
+  margin: 0 auto;
+}
+
+#f_val td {
+  width: 20vmin;
+  line-height: 5vmin;
+  font-size: 3vmin;
+  text-align: center;
+  font-family: monospace;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2vmin;
+}
+
+.switchedOff {
+  box-shadow: 0px 0px 5px 5px white inset;
+}
+
+.td0 {
+  background-color: #b3c6ff !important;
+}
+
+.td1 {
+  background-color: #b3d9ff !important;
+}
+
+.td2 {
+  background-color: #b3ecff !important;
+}
+
+.td3 {
+  background-color: #b3ffff !important;
+}
+
+.td4 {
+  background-color: #b3ffec !important;
+}
+
+.td5 {
+  background-color: #b3ffd9 !important;
+}
+
+.td6 {
+  background-color: #b3ffc6 !important;
+}
+
+.td7 {
+  background-color: #b3ffb3 !important;
+}
+
+.td8 {
+  background-color: #c6ffb3 !important;
+}
+
+.td9 {
+  background-color: #d9ffb3 !important;
+}
+
+.td10 {
+  background-color: #ecffb3 !important;
+}
+
+.td11 {
+  background-color: #ffffb3 !important;
+}
+
+.td12 {
+  background-color: #ffecb3 !important;
+}
+
+.td13 {
+  background-color: #ffd9b3 !important;
+}
+
+.td14 {
+  background-color: #ffc6b3 !important;
+}
+
+.td15 {
+  background-color: #ffb3b3 !important;
+}

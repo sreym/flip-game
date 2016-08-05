@@ -1,0 +1,10 @@
+<ion-modal-view ng-controller="ResultCtrl">
+  <ion-header-bar>
+    <h1 class="title">You won!</h1>
+    <button class="button icon ion-close" ng-click="close()"></button>
+  </ion-header-bar>
+  <ion-content>
+    <p>You've earned complexity: {{ comp }}.</p>
+    <p>You've made clicks: {{ clicks }}.</p>
+  </ion-content>
+</ion-modal-view>
